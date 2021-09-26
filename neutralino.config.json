@@ -1,20 +1,17 @@
 {
-  "applicationId": "js.neutralino.sample",
+  "applicationId": "ir.NavidMafi.SimpleCalc",
   "port": 0,
   "defaultMode": "window",
   "enableHTTPServer": true,
   "enableNativeAPI": true,
-  "url": "/resources/",
+  "url": "/resources/views/main.html",
   "nativeBlockList": [],
-  "globalVariables": {
-    "TEST": "Test Value"
-  },
   "modes": {
     "window": {
       "title": "SimpleCalc",
-      "width": 800,
+      "width": 430,
       "height": 500,
-      "minWidth": 400,
+      "minWidth": 430,
       "minHeight": 250,
       "fullScreen": false,
       "alwaysOnTop": false,

@@ -1,6 +1,6 @@
 
 window.myApp = {
-    showInfo: () => {
+    /*showInfo: () => {
         document.getElementById('info').innerHTML = `
             ${NL_APPID} is running on port ${NL_PORT}  inside ${NL_OS} 
             <br/><br/>
@@ -45,14 +45,14 @@ window.myApp = {
                 Neutralino.app.exit();
                 break;
         }
-    },
+    },*/
     onWindowClose: () => {
         Neutralino.app.exit();
     }
 };
 
 Neutralino.init();
-Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
+//Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
 Neutralino.events.on("windowClose", myApp.onWindowClose);
 //window.myApp.setTray(); Uncomment to enable the tray menu.
-window.myApp.showInfo();
+//window.myApp.showInfo();
