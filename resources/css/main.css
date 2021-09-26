@@ -42,34 +42,70 @@ See the LICENCE file in the repository root for full licence text.
     box-sizing: border-box;
 
 }
+.history {
+    background-color: var(--GGray1);
+    font-size: 3vh;
+
+    padding-left: 2%;
+}
   .screen { 
-      font-family: SvnSeg;
       height: 20vh;
-      font-size: 12vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: black;
+      background-color: var(--GGray1);
+  }
+  .output {
+    font-family: SvnSeg;
+    font-size: 12vh;
+    text-shadow: 0 0 15px var(--GPrim);
+    z-index: 5;
+  }
+  .stats {
+      position: absolute;
+      left: 3%;
+      color: green;
+    text-shadow: 0 0 5px var(--GPrim);
+
   }
 .buttons {
-    font-size: 6vh;
+    font-size: 5vh;
+
+    
 }
-  .memaction {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-  }
-  .nums {
+.BtnsCol {
     display: grid;
     justify-content: center;
-    grid-template-columns: 33% 33% 33%;
-  }
+}
+.FourColsEqual {
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+  /* .memaction {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+  } */
+  /* .nums {
+    
+  } */
   .numBtns {
     text-align: center;
     background-color: var(--GPrim);
-    margin: 5%;
+    margin: 5% 5%;
+    padding: 5%;
     transition: 100ms;
-
+    border-radius: 5px;
+    box-shadow: 0 0 4px var(--GBlack);
   }
   .numBtns:hover {
     background-color: var(--GGray1);
   }
+  .ACBtn {
+      background-color: #ff2d2d;
+  }
+  /* .actionBtns {
+
+  }
+  .actionBtns:hover {
+
+  } */
